@@ -25,7 +25,7 @@ if [[ $ether = "" ]]; then
 fi
 
 #vps="zvur";
-vps="blangkon";
+vps="aneka";
 
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
@@ -35,24 +35,14 @@ vps="blangkon";
 
 # go to root
 cd
-# pass
-clear
-read -p "Silahkan masukkan password installer script: " passwds
-wget -q -O /usr/bin/pass $source/debian7/password.txt
-if ! grep -w -q $passwds /usr/bin/pass; then
-clear
-echo " Maaf, PASSWORD salah silahkan hubungi admin"
-rm /usr/bin/pass
-rm cinta7.sh
 
-exit
-fi
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Only Listed IP In My Github Can Use This Script"
-        echo "     
-                       
+	echo "
+      Only Listed IP Can Use This Autoscript By SYAHZ86
+"
+fi                      
                =============== OS-32 & 64-bit ================
                ♦                                             ♦
                ♦        AUTOSCRIPT CREATED BY SYAHZ86        ♦
@@ -60,11 +50,12 @@ if ! grep -w -q $MYIP IP; then
                =============== OS-32 & 64-bit ================
 
 	echo "        Hubungi: editor SYAHZ86 "
-	
+
+
 	rm /root/IP
-	rm cinta7.sh
 	rm -f /root/IP
 	exit
+	
 fi
 
 # disable ipv6
