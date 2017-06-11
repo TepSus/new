@@ -26,7 +26,7 @@ fi
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+	source="https://raw.githubusercontent.com/syahz86/new"
 #fi
 
 # go to root
@@ -35,32 +35,16 @@ cd
 # check registered ip
 wget -q -O IPcarding $source/debian7/IPcarding.txt
 if ! grep -w -q $MYIP IPcarding; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
+	echo "Only Listed IP In My Github Can Use this Script"
         echo "     
                        
-               =============== OS-32 & 64-bit ================
+               ===============================================
                ♦                                             ♦
-               ♦   AUTOSCRIPT CREATED BY YUSUF ARDIANSYAH    ♦
-               ♦       -----------About Us------------       ♦ 
-               ♦            Telp : +6282139743432            ♦
-               ♦         { Sms/whatsapp/telegram }           ♦ 
-               ♦       http://facebook.com/t34mh4ck3r        ♦    
-               ♦               Pin BBM : yu-suf              ♦
-               ♦                                             ♦
+               ♦        AUTOSCRIPT CREATED BY SYAHZ86        ♦
+               ♦                                             ♦ 
                =============== OS-32 & 64-bit ================
-               
-                 Please make payment before use auto script
-                 ..........................................
-                 .        Price: Rp.20.000 = 1IP          .
-                 .          *****************             .
-                 .           Maybank Account              .
-                 .           =================            .
-                 .          No   : Hubungi admin          .
-                 .          Name : YUSUF-ARDIANSYAH       .
-                 ..........................................   
-                          Thank You For Choice Us"
 
-	echo "        Hubungi: editor YUSUF-ARDIANSYAH / BLANGKON "
+	echo "        Hubungi: editor SYAHZ86 "
 	rm -f /root/IPcarding
 	exit
 fi
