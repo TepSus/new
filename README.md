@@ -1,13 +1,14 @@
-# Auto Script, By YUSUF-ARDIANSYAH (082139743432)
+# Auto Script, By syahz86
+SILA ACCEPT (Y/YES) JIKA ADA TAMBAHAN PACKAGE
 =================================================================================
 
-# 2017
+# 2017 (support Debian 7 32/64 bit)
 ```
-wget https://raw.githubusercontent.com/yusuf-ardiansyah/new/debian7/2017.sh && chmod +x ./2017.sh && ./2017.sh
+wget https://raw.githubusercontent.com/syahz86/new/debian7/2017.sh && chmod +x ./2017.sh && ./2017.sh
 ```
 # OPENVPN
 ```
-wget -O openvpn.sh https://raw.githubusercontent.com/join-x/y/debian7/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
+wget -O openvpn.sh https://raw.githubusercontent.com/syahz86/y/debian7/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
 ```
-# TERIMA KASIH YA ALLAH SWT ATAS SEMUANYA
+# BAIK PUNYA CILOK (COPY & PASTE)
 =================================================================================
