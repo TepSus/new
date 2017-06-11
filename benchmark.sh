@@ -3,7 +3,7 @@
 #vps="zvur";
 vps="aneka";
 
-source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+source="https://raw.githubusercontent.com/syahz86/new"
 
 
 # go to root
