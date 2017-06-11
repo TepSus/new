@@ -145,15 +145,15 @@ cd
 rm -rf /root/.bashrc
 wget -O /root/.bashrc $source/debian7/.bashrc
 
-# install webserver
+# Install Web Server
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf $source/debian7/nginx.conf
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/muchigo/VPS/master/conf/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Modified by SYAHZ86</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by Syahz86</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
-wget -O /etc/nginx/conf.d/vps.conf $source/debian7/vps.conf
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/muchigo/VPS/master/conf/vps.conf"
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 service php5-fpm restart
 service nginx restart
