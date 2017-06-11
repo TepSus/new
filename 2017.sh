@@ -30,7 +30,7 @@ vps="blangkon";
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+	source="https://raw.githubusercontent.com/syahz86/new"
 #fi
 
 # go to root
@@ -50,32 +50,16 @@ fi
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
+	echo "Only Listed IP In My Github Can Use This Script"
         echo "     
                        
                =============== OS-32 & 64-bit ================
                ♦                                             ♦
-               ♦   AUTOSCRIPT CREATED BY YUSUF ARDIANSYAH    ♦
-               ♦       -----------About Us------------       ♦ 
-               ♦            Telp : +6282139743432            ♦
-               ♦         { Sms/whatsapp/telegram }           ♦ 
-               ♦       http://facebook.com/t34mh4ck3r        ♦    
-               ♦               Pin BBM : yu-suf              ♦
-               ♦                                             ♦
+               ♦        AUTOSCRIPT CREATED BY SYAHZ86        ♦
+               ♦                                             ♦             
                =============== OS-32 & 64-bit ================
-               
-                 Please make payment before use auto script
-                 ..........................................
-                 .        Price: Rp.20.000 = 1IP          .
-                 .          *****************             .
-                 .           Maybank Account              .
-                 .           =================            .
-                 .          No   : Hubungi admin          .
-                 .          Name : YUSUF-ARDIANSYAH       .
-                 ..........................................   
-                          Thank You For Choice Us"
 
-	echo "        Hubungi: editor YUSUF-ARDIANSYAH / BLANGKON "
+	echo "        Hubungi: editor SYAHZ86 "
 	
 	rm /root/IP
 	rm cinta7.sh
@@ -96,7 +80,7 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 apt-get update;apt-get -y install wget curl;
 apt-get install gem
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -167,7 +151,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf $source/debian7/nginx.conf
 mkdir -p /home/vps/public_html
-echo "<pre>Modified by YUSUF-ARDIANSYAH / (082139743432)</pre>" > /home/vps/public_html/index.html
+echo "<pre>Modified by SYAHZ86</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf $source/debian7/vps.conf
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
@@ -175,9 +159,9 @@ service php5-fpm restart
 service nginx restart
 
 #PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-#useradd -M -s /bin/false deenie11
-#echo "deenie11:$PASS" | chpasswd
-#echo "deenie11" >> pass.txt
+#useradd -M -s /bin/false syahz86
+#echo "syahz86:$PASS" | chpasswd
+#echo "syahz86" >> pass.txt
 #echo "$PASS" >> pass.txt
 #cp pass.txt /home/vps/public_html/
 #rm -f /root/pass.txt
@@ -427,10 +411,10 @@ chmod +x ovpn.sh
 ./ovpn.sh
 rm ./ovpn.sh
 
-usermod -s /bin/false mail
-echo "mail:ardy" | chpasswd
-useradd -s /bin/false -M YUSUF-ARDIANSYAH
-echo "YUSUF-ARDIANSYAH:ardy" | chpasswd
+usermod -s /bin/false test1
+echo "test1:test1" | chpasswd
+useradd -s /bin/false -M retard
+echo "retard:123456" | chpasswd
 # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
@@ -450,7 +434,7 @@ echo "unset HISTFILE" >> /etc/profile
 
 # info
 clear
-echo "Autoscript Edited YUSUF-ARDIANSYAH / (082139743432):" | tee log-install.txt
+echo "Autoscript Edited SYAHZ86:" | tee log-install.txt
 echo "=======================================================" | tee -a log-install.txt
 echo "Service :" | tee -a log-install.txt
 echo "---------" | tee -a log-install.txt
@@ -475,7 +459,7 @@ echo "------------" | tee -a log-install.txt
 echo "Webmin            : http://$MYIP:10000/" | tee -a log-install.txt
 echo "vnstat            : http://$MYIP:81/vnstat/ [Cek Bandwith]" | tee -a log-install.txt
 #echo "MRTG              : http://$MYIP:81/mrtg/" | tee -a log-install.txt
-echo "Timezone          : Asia/Jakarta " | tee -a log-install.txt
+echo "Timezone          : Asia/Kuala_Lumpur " | tee -a log-install.txt
 echo "Fail2Ban          : [on]" | tee -a log-install.txt
 echo "DDoS Deflate.     : [on] Install di menu no 37" | tee -a log-install.txt
 echo "Block Torrent     : [off]" | tee -a log-install.txt
@@ -488,7 +472,7 @@ echo "" | tee -a log-install.txt
 if [[ $vps = "zvur" ]]; then
 	echo "ALL SUPPORTED BY CLIENT VPS" | tee -a log-install.txt
 else
-	echo "ALL SUPPORTED BY TEAM HACKER" | tee -a log-install.txt
+	echo "ALL SUPPORTED BY GollumVPN" | tee -a log-install.txt
 	
 fi
 echo "Credit to all developers script, Yusuf ardiansyah" | tee -a log-install.txt
