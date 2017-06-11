@@ -28,7 +28,7 @@ vps="aneka";
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+	source="https://raw.githubusercontent.com/syahz86/new"
 #fi
 
 # go to root
@@ -37,11 +37,11 @@ cd
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
+	echo "Only Listed IP In My Github Can Use This Script"
 	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: editor YUSUF-ARDIANSYAH atau (082139743432)"
+		echo "Hubungi: editor SYAHZ86"
 	else
-		echo "Hubungi: editor YUSUF-ARDIANSYAH atau (082139743432)"
+		echo "Hubungi: editor SYAHZ86"
 	fi
 	rm /root/IP
 	rm -f /root/IP
