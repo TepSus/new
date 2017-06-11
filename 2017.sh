@@ -39,15 +39,7 @@ cd
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "
-      Only Listed IP Can Use This Autoscript By SYAHZ86
-"
-fi                      
-               =============== OS-32 & 64-bit ================
-               ♦                                             ♦
-               ♦        AUTOSCRIPT CREATED BY SYAHZ86        ♦
-               ♦                                             ♦             
-               =============== OS-32 & 64-bit ================
+	echo " Only Listed IP Can Use This Autoscript By SYAHZ86 "
 
 	echo "        Hubungi: editor SYAHZ86 "
 
