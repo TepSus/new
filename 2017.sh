@@ -30,7 +30,7 @@ vps="aneka";
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/syahz86/new"
+	source="https://raw.githubusercontent.com/syahz86/y"
 #fi
 
 # go to root
@@ -39,15 +39,15 @@ cd
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo " Only Listed IP Can Use This Autoscript By SYAHZ86 "
+	echo "
+      Only Listed IP Can Use This Autoscript By SYAHZ86
+"
 
-	echo "        Hubungi: editor SYAHZ86 "
 
 
 	rm /root/IP
 	rm -f /root/IP
-	exit
-	
+	exit	
 fi
 
 # disable ipv6
