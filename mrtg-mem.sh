@@ -18,7 +18,7 @@ fi
 vps="aneka";
 
 
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+	source="https://raw.githubusercontent.com/syahz86/new"
 
 
 # go to root
@@ -27,11 +27,11 @@ cd
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
+	echo "Only Listed IP In My Github Can Use This Script"
 	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: YUSUF-ARDIANSYAH / (082139743432)"
+		echo "Hubungi: SYAHZ86"
 	else
-		echo "Hubungi: YUSUF-ARDIANSYAH / (082139743432)"
+		echo "Hubungi: SYAHZ86"
 	fi
 	rm -f /root/IP
 	exit
@@ -47,10 +47,10 @@ echo $UP
 echo "----------------------------------------------------------------" 
 
 
-	echo " Edited by YUSUF-ARDIANSYAH / (082139743432)"
+	echo " Edited by SYAHZ86"
 
 
-	echo " TEAM HACKER "
+	echo " Supported By GollumVPN "
 echo "----------------------------------------------------------------" 
 
 cd ~/
