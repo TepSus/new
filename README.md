@@ -6,7 +6,7 @@
 :phone:[JuiceSSH for Android](https://play.google.com/store/apps/details?id=com.sonelli.juicessh&hl=en)
 
 - SILA ACCEPT (Y/YES) JIKA ADA TAMBAHAN PACKAGE
-=================================================================================
+==============================================================================
 
 # 2017 (support Debian 7 32/64 bit)
 ```
