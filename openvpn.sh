@@ -41,7 +41,7 @@ fi
 #if [[ $vps = "zvur" ]]; then
 	
 
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/new"
+	source="https://raw.githubusercontent.com/syahz86/new"
 #fi
 
 geteasyrsa () {
@@ -106,7 +106,7 @@ else
 	echo "---------- OpenVPN Installer for Debian, Ubuntu, CentOS ------------"
 	echo ""
 	
-		echo "             DEVELOPED BY YUSUF-ARDIANSYAH atau (082139743432)                     "
+		echo "             DEVELOPED BY SYAHZ86                     "
 	echo ""
 	echo ""
 	# OpenVPN setup and first user creation
