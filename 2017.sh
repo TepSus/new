@@ -37,7 +37,7 @@ cd
 
 # check registered ip
 wget -q -O IP $source/debian7/IP.txt
-if ! grep -w -q $MYIP IP; 103.86.50.95
+ถ้า ! grep  -w  -q  $ MYIP IP; 103 .86.50.95"
 	echo "Only Listed IP Can Use This Autoscript By SYAHZ86"
 
 
