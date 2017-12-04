@@ -8,8 +8,7 @@ fi
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
-#MYIP=$(wget -qO- ipv4.icanhazip.com);
-
+#MYIP=$(wget -qO- ipv4.icanhazip.com)
 # get the VPS IP
 #ip=`ifconfig venet0:0 | grep 'inet addr' | awk {'print $2'} | sed s/.*://`
 
